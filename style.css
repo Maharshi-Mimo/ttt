@@ -30,8 +30,8 @@ button {
 
 .container{
     height: 70vh;
-   margin-top: 2rem;
-   display: flex;
+    margin-top: 2rem;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -54,5 +54,23 @@ button {
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem rgba(251, 251, 251, 0.1);
+    font-size: 5vmin;
+}
+
+/*.reset {
+    background-color: wheat;
+    color: black;
+    border-radius: 1rem;
+    font-size: 150%;
+    
+}*/
+
+#reset-btn {
+    padding: 1rem;
+    background-color: rgb(34, 33, 41);
+    color: wheat;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
 }
