@@ -58,13 +58,13 @@ button {
     font-size: 5vmin;
 }
 
-/*.reset {
+.reset {
     background-color: wheat;
     color: black;
     border-radius: 1rem;
     font-size: 150%;
     
-}*/
+}
 
 #reset-btn {
     padding: 1rem;
@@ -73,4 +73,26 @@ button {
     border-radius: 1rem;
     font-size: 1rem;
     border: none;
+}
+
+.hide {
+    display: none;
+}
+
+#msg { 
+    color: whitesmoke;
+    font-size: 5vmin;
+}
+
+#new-btn {
+    padding: 1rem;
+    background-color: rgb(34, 33, 41);
+    color: wheat;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.msg-container {
+    height: 20vmin;
 }
