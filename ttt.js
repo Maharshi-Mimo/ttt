@@ -30,8 +30,8 @@ boxes.forEach((box) => {
     });
 });
 
-const showWinner = (winner) => {
-    msg.innerText =`Congratulations, winner is ${winner}`;
+function showWinner(winner) {
+    msg.innerText = `Congratulations, winner is ${winner}`;
     msgContainer.classList.remove("hide");
 }
 const checkWinner = () => {
