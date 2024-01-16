@@ -33,6 +33,7 @@ boxes.forEach((box) => {
 function showWinner(winner) {
     msg.innerText = `Congratulations, winner is ${winner}`;
     msgContainer.classList.remove("hide");
+    disableBoxes();
 }
 const checkWinner = () => {
     for (let patt of  winPatt) {
@@ -48,3 +49,25 @@ const checkWinner = () => {
         }
     }
 };
+
+const resetgame = () => {
+    turnX = true;
+    enableBoxes();
+    msgContainer.classList.add("hide");
+};
+
+const disableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+};
+
+const enableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
+    }
+};
+
+newGameBtn.addEventListener("click", resetgame);
+resetBtn.addEventListener("click", resetgame);
